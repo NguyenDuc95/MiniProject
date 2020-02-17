@@ -1,13 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app.todos">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- load cdn style -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- load cdn script -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="assets/js/main/app.js"></script>
+    <link rel="stylesheet" href="assets/css/app.css">
     <title>Home</title>
 </head>
-<body>
-    <h1>Home page</h1>
-    
+
+<body ng-controller="todoController">
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">{{ appName }} <span class="label label-info">10</span></h1>
+        </div>
+        <div id="todo-list" class="row text-center">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="checkbox">
+                    <input type="checkbox">Lear Node js
+                </div>
+            </div> 
+        </div>
+        <div id="todo-form" class="row text-center">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg text-center" placeholder="please enter here then click submit button">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

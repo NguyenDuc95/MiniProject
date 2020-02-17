@@ -1,0 +1,12 @@
+html{
+    overflow: scroll;
+}
+body{
+    margin-top: 30px;
+}
+#todo-list{
+    margin-bottom: 30px;
+}
+#todo-form{
+    margin-bottom: 30px;
+}

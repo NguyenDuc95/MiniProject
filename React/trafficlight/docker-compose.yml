@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  app:
+    image: traffic-react:v1
+    ports:
+      - "5000:80"
+    restart: unless-stopped
